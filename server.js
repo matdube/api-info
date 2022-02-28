@@ -1,7 +1,7 @@
 const http = require("http");
 const variables = require("./variables");
 
-const path = process.env.PATH || "";
+const path = process.env.ROOT_PATH || "";
 
 const handleHealthProbe = (req, res) => {
   if (req.url === `${path}/health` && req.method === "GET") {
